@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - PodcastPro</title>
+  <meta name="description" content="Latest videos from PodcastPro">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo"><i class="fas fa-podcast"></i> PodcastPro</a>
+
+      <ul id="navMenu" class="nav-menu" role="menu" aria-hidden="true">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="videos.html" class="active">Videos</a></li>
+      </ul>
+
+      <button id="mobileMenuBtn" class="mobile-menu-btn" aria-controls="navMenu" aria-expanded="false" aria-label="Open main menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+        <span>Theme</span>
+      </button>
+    </nav>
+  </header>
+
+  <div id="mobileMenuBackdrop" class="mobile-menu-backdrop" aria-hidden="true"></div>
+
+  <main class="section">
+    <h1 class="section-title">Latest Videos</h1>
+    <p style="text-align:center; color:var(--text-light); margin-bottom:3rem; font-size:1.1rem;">Watch our latest podcast episodes and video content</p>
+
+    <div class="video-grid">
+      <div class="video-card">
+        <div class="video-thumbnail">
+          <img src="assets/images/placeholder-video.jpg" alt="Video thumbnail">
+          <button class="play-button"><i class="fas fa-play"></i></button>
+        </div>
+        <div style="padding:1.5rem;">
+          <h3 style="margin-bottom:1rem;">Sample Video Title</h3>
+          <p style="color:var(--text-light); margin-bottom:1rem;">Static snapshot description.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <div style="max-width:800px; margin:0 auto;">
+        <h2 class="section-title">Join the Conversation</h2>
+        <p style="text-align:center; color:var(--text-light); margin-bottom:2rem;">Share your thoughts about our videos</p>
+
+  <form class="comment-form" action="https://api.example.com/includes/comment-handler.php" method="post" style="background:white; padding:2rem; border-radius:10px; box-shadow:0 5px 20px rgba(0,0,0,0.1);">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+            <div class="form-group">
+              <label for="comment_name" style="display:block; margin-bottom:0.5rem; font-weight:600; color:var(--orange-dark);">Name *</label>
+              <input type="text" id="comment_name" name="author_name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="comment_email" style="display:block; margin-bottom:0.5rem; font-weight:600; color:var(--orange-dark);">Email</label>
+              <input type="email" id="comment_email" name="author_email" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="comment_content" style="display:block; margin-bottom:0.5rem; font-weight:600; color:var(--orange-dark);">Comment *</label>
+            <textarea id="comment_content" name="content" class="form-control" required style="min-height:120px; resize:vertical;" placeholder="Share your thoughts about our videos..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fas fa-paper-plane"></i> Post Comment</button>
+
+          <p style="text-align:center; color:var(--text-light); margin-top:1rem; font-size:0.9rem;">Comments are moderated and will appear after approval.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="section">
+      <div style="max-width:1200px; margin:0 auto;">
+        <div style="border-top:1px solid #4A5568; padding-top:2rem; text-align:center; color:#CBD5E0;">
+          <p>&copy; 2025 PodcastPro. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
